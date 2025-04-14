@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+<form action="createUserPost" method="post">
+{% csrf_token %}
+<input type = "text" name="username" />
+<input type = "text" name="password" />
+<input type = "text" name="email" />
+<input type = "text" name="created_at" />
+<button>저장</button>
+</form>
+</body>
+</html>

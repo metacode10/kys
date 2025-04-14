@@ -75,8 +75,15 @@ WSGI_APPLICATION = 'kys.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'web',
+        'USER': 'metacode10',
+        'PASSWORD': 'Spring2024$',
+        'HOST': '122.199.182.91',
+        'PORT': '3306',
+        'OPTIONS': {
+	        'init_command': 'SET SQL_MODE = "STRICT_TRANS_TABLES"',
+                    },
     }
 }
 

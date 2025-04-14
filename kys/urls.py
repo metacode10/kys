@@ -22,7 +22,8 @@ import accountapp
 
 
 urlpatterns = [
-    path('', main_views.index, name="index"),
+    path('', main_views.createUserGet, name="createUserGet"),
+    path('createUserPost', main_views.createUserPost, name="createUserPost"),
     path('admin/', admin.site.urls),
     # path('accounts/', include('accountapp.urls')),
 ]
